@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Cześć Kochani fajnie Was widzieć bardzo Was lubie i super jest spotkać sie
+      na żywo
+    </title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <p id="aktualna" class="sr-only">
+      aktualna strona, czyli wersja dobrze dostosowana do screen readera
+    </p>
+    <p id="zla" class="sr-only">
+      Otwórz stronę niedostosowaną do screen readera
+    </p>
+    <p id="kontrast" class="sr-only">Otwórz stronę ze słabym kontrastem</p>
+
+    <ul role="navigation" class="navigation">
+      <li>
+        <a
+          title="przejdź do wersji najlepiej dostępnej"
+          href="./screen-reader.html"
+          class="aktualna"
+          id="dost"
+          aria-labelledby="dost aktualna"
+          aria-current="true"
+          >Strona dobrze dostępna</a
+        >
+      </li>
+      <li>
+        <a
+          title="przejdź do wersji słabo dostępnej dla screen readera"
+          aria-labelledby="zla niedostosowana"
+          id="niedostosowana"
+          class="nieaktualna"
+          href="./non-screen-reader.html"
+          >Strona słabo dostosowana do screen readera</a
+        >
+      </li>
+      <li>
+        <a
+          title="przejdź do wersji ze słabym kontrastem"
+          aria-labelledby="zly_kontrast kontrast"
+          id="zly_kontrast"
+          class="nieaktualna"
+          href="./slaby-kontrast.html"
+          >Strona ze słabym kontrastem</a
+        >
+      </li>
+    </ul>
+
+    <h1 tabindex="0">Train the Trainer - ostatni zjazd</h1>
+    <main>
+      <div tabindex="0">
+        <h2>Wstęp</h2>
+        <p>
+          Spotkaliśmy się osobiście we Wrocławiu. Tematem tej części kursu jest
+          prezentacja dowolnego szkolenia przez każdego z uczestników.
+        </p>
+      </div>
+
+      <section class="obecn">
+        <div tabindex="0">
+          <h2>Lista obecności</h2>
+        </div>
+        <fieldset>
+          <legend class="accent">
+            <label for="uprawnienia">
+              Czy masz uprawnienia, by sprawdzić listę obecności?</label
+            >
+          </legend>
+          <input
+            aria-labelledby="uprawnienia tak"
+            type="checkbox"
+            class="toggle"
+            id="uprawnienia"
+            data-label="TAK"
+          />
+          <p class="sr-only" id="tak">TAK, mogę sprawdzać obecnosć</p>
+        </fieldset>
+        <form aria-labelledby="obecnosc" id="lista_obecnosci" class="disabled">
+          <fieldset>
+            <legend id="obecnosc">Zatem sprawdźmy obecność</legend>
+            <ol>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Batogowski"
+                    disabled
+                  />
+                  <label for="Batogowski">Jakub Batogowski</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Czastkiewicz"
+                    disabled
+                  />
+                  <label for="Czastkiewicz">Marta Cząstkiewicz</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Florianowicz"
+                    disabled
+                  />
+                  <label for="Florianowicz">Szymon Florianowicz</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Lipok"
+                    disabled
+                  />
+                  <label for="Lipok">Adrianna Lipok</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Nowak"
+                    disabled
+                  />
+                  <label for="Nowak">Kamil Nowak</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Piechnik"
+                    disabled
+                  />
+                  <label for="Piechnik">Dariusz Piechnik</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Polit"
+                    disabled
+                  />
+                  <label for="Polit">Andrzej Polit</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Agienczuk"
+                    disabled
+                  />
+                  <label for="Agienczuk">Krzysztof Agieńczuk</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Pruska"
+                    disabled
+                  />
+                  <label for="Pruska">Barbara Pruska</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Sendal"
+                    disabled
+                  />
+                  <label for="Sendal">Szymon Sendal</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Siecinska"
+                    disabled
+                  />
+                  <label for="Siecinska">Anna Siecińska</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Jaskula"
+                    disabled
+                  />
+                  <label for="Jaskula">Anna Skowronek-Jaskuła</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Szalkiewicz"
+                    disabled
+                  />
+                  <label for="Szalkiewicz">Joanna Szałkiewicz</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="regular-checkbox"
+                    id="Zoraw"
+                    disabled
+                  />
+                  <label for="Zoraw">Sandra Żóraw</label>
+                </div>
+              </li>
+            </ol>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <label for="uwagi"> Uwagi do listy obecności</label>
+            </legend>
+            <textarea id="uwagi" rows="5"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Obecność prowadzącego Andrzeja Kaźmierczaka</legend>
+            <p class="sr-only" id="andrzej_obecny">Andrzej jest dziś obecny</p>
+            <p class="sr-only" id="andrzej_nieobecny">Andrzeja dziś nie ma</p>
+            <label for="AndrzejObecny"> Obecny </label>
+            <input
+              type="radio"
+              id="AndrzejObecny"
+              name="obecnosc_andrzej"
+              aria-labelledby="AndrzejObecny andrzej_obecny"
+              disabled
+            />
+            <br />
+            <label for="AndrzejNieobecny"> Nieobecny </label>
+            <input
+              type="radio"
+              id="AndrzejNieobecny"
+              name="obecnosc_andrzej"
+              aria-labelledby="AndrzejNieobecny andrzej_nieobecny"
+              disabled
+            />
+          </fieldset>
+          <hr />
+          <p id="sprawdzona" class="sr-only">Obecność sprawdzona</p>
+          <button id="btn" aria-labelledby="btn sprawdzona">
+            <svg
+              viewBox="0 0 167.05818 112.38647"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="M 57.46271,111.93896 C 53.98006,110.58591 0,55.59477 0,53.39996 c 0,-3.16695 2.39324,-5.64997 5.4457,-5.64997 2.3119,0 7.09568,4.30347 27.92923,25.125 13.82672,13.81875 25.58019,25.125 26.11881,25.125 0.53862,0 23.04598,-22.05 50.01636,-49 C 152.61351,5.92917 158.91337,0 161.57358,0 163.23811,0 165.14,0.54 165.8,1.2 c 3.65793,3.65792 2.71485,4.73962 -50.96321,58.45379 -28.68977,28.70906 -52.89405,52.38942 -53.7873,52.62301 -0.89324,0.23359 -2.5073,0.0816 -3.58678,-0.33784 z"
+              />
+            </svg>
+          </button>
+        </form>
+
+        <h2 id="accepted" style="display: none">Lista obecnosci sprawdzona</h2>
+      </section>
+
+      <!-- <div tabindex="0" class="text-center">
+        <h2>Szkolenie o accessibility prowadzą:</h2>
+        <div class="os">
+          <img
+            id="siecinska_photo"
+            src="./images/ania.jpg"
+            alt="zdjęcie Ani"
+            title="Ania Siecińskiej"
+          />
+          <p>Ania Siecińska</p>
+        </div>
+        <div class="os">
+          <img
+            id="czastkiewicz_photo"
+            src="./images/marta.jpg"
+            alt="zdjęcie Marty"
+            title="Marta Cząstkiewicz"
+          />
+          <p>Marta Cząstkiewicz</p>
+        </div>
+        <div class="os">
+          <img
+            id="skowronek_photo"
+            src="./images/skowronek.jpg"
+            alt="zdjęcie Skowronki"
+            title="Ania Skowronek"
+          />
+          <p>Ania Skowronek</p>
+        </div>
+      </div> -->
+
+      <div tabindex="0">
+        <h2>Poprowadzimy szkolenie</h2>
+        <p>
+          Zakończeniem i zwieńczeniem kursu jest poprowadzone przez każdego z
+          uczestników półgodzinne szkolenie. Temat szkolenia jest dowolny,
+          zapewne chodzi w nim głównie o to, by wystawić się na ocenę
+          współkursantów i poczuć, w jakiej formie prezentacji czujemy się
+          najlepiej.
+        </p>
+      </div>
+      <div tabindex="0">
+        <h2>Chętnie schowam się online</h2>
+        <p>
+          Myślę teraz, że dla mnie optymalną formą jest jednak spotkanie online.
+          Z jednej strony fajnie jest spotkać się osobiście, ale z drugiej nie
+          bardzo wiem, jak mam zaprezentować się przed grupą osób, pisząc coś w
+          komputerze. Jak tu nawiązać kontakt wzorkowy? W jaki sposób zadawać
+          pytania? Nie mam teraz odpowiedzi.
+        </p>
+      </div>
+
+      <h2>I jeszcze taki bajer</h2>
+      <div
+        tabindex="0"
+        aria-label="Ustawa o dostępności cyfrowej stron internetowych i aplikacji
+      mobilnych podmiotów publicznych"
+      >
+        <h3>Art. 2. Ustawę stosuje się do:</h3>
+        <ol>
+          <li>
+            jednostek sektora finansów publicznych (Dz. U. z 2017 r. poz. 2077,
+            z późn. zm.3),
+          </li>
+          <li>
+            innych, niż określone w pkt 1, państwowych jednostek
+            organizacyjnych,
+          </li>
+          <li>
+            innych, niż określone w pkt. 1, samorządowych jednostek
+            organizacyjnych,
+          </li>
+          <li>
+            innych, niż określone w pkt. 1. osób prawnych, bezpośrednio albo
+            pośrednio przez inny podmiot:
+            <ol>
+              <li>finansują je w ponad 50% lub</li>
+              <li>posiadają ponad połowę udziałów albo akcji, lub</li>
+              <li>sprawują nadzór nad organem zarządzającym, lub</li>
+              <li>
+                mają prawo do powoływania ponad połowy składu organu nadzorczego
+                lub zarządzającego,
+              </li>
+            </ol>
+          </li>
+          <li>związków podmiotów, o których mowa w pkt 1–3,</li>
+          <li>
+            organizacji pozarządowych, o których mowa w art. 3 ust. 2 ustawy z
+            dnia 24 kwietnia 2003 r. o działalności pożytku
+          </li>
+          publicznego i o wolontariacie (Dz. U. z 2019 r. poz. 688),
+          prowadzących działalność w sferze zadań publicznych wymienionych w
+          art. 4 ust. 1 pkt 6, 7 lub 10 tej ustawy – posiadających strony
+          internetowe lub aplikacje mobilne, lub zarządzających elementami stron
+          internetowych, lub aplikacji mobilnych zamieszczonymi w środowisku
+          umożliwiającym zapewnienie dostępności cyfrowej treści, zwanych dalej
+          „podmiotami publicznymi”
+        </ol>
+      </div>
+      <button id="myBtn" title="Wróć do góry strony">
+        <svg
+          viewBox="0 0 37.835419 44.405893"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="currentColor"
+            d="m 19.18229,44.33 -0.26458,0.0661 -0.33073,-0.13229 -0.33073,-0.1323 V 28.28837 12.435419 h -0.1966 -0.1966 L 10.94191,19.35287 4.02076,26.27032 3.59788,26.10805 3.175,25.94578 v -0.47732 -0.47732 l 7.74942,-7.73307 7.74941,-7.733068 h 0.25592 0.25591 l 7.73738,7.740718 7.73738,7.74072 v 0.46967 0.46967 l -0.42288,0.16227 -0.42288,0.16227 -6.92114,-6.91745 -6.92115,-6.917451 H 19.77783 19.5833 L 19.5151,28.35454 19.4469,44.27367 Z M 18.82993,1.566614 0.66146,1.545724 0.33073,1.412272 0,1.278819 V 0.800009 0.321198 L 0.41852,0.160599 0.83703,0 h 18.08068 18.08068 l 0.41851,0.160599 0.41852,0.160599 V 0.79375 1.266302 L 37.4169,1.426901 36.99839,1.5875 Z"
+          />
+        </svg>
+      </button>
+    </main>
+    <link rel="stylesheet" type="text/css" href="./dist/styles.css" />
+    <script src="./script.js"></script>
+    <a href="./non-screen-reader.html">Przełacz na wersję mniej dostępną</a>
+  </body>
+</html>

@@ -1,0 +1,438 @@
+:root {
+  --color-grey_1: #bbb;
+  --color-grey_2: #dfdfdf;
+  --color-grey_3: #717171;
+  --color-accent: #b52150;
+  --color-accent-light: #ffe2eb;
+  --color-focus: #6c1430;
+  --toggle-width: 3.5rem;
+  --color-secondary: #5568a1;
+}
+
+:root .slaby-kontrast {
+  --color-grey_1: #bbb;
+  --color-grey_2: #dfdfdf;
+  --color-grey_3: #717171;
+  --color-accent: #f890b1;
+  --color-accent-light: #7a1b39;
+  --color-focus: #6c1430;
+  --toggle-width: 3.5rem;
+  --color-secondary: #a5b3df;
+}
+@font-face {
+  font-family: Source Sans Pro;
+  src: url("./SourceSansPro-Regular.ttf");
+}
+#lista_obecnosci ol li div input:checked {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 167.05818 112.38647' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%235568a1' d='M 57.46271 111.93896 C 53.98006 110.58591 0 55.59477 0 53.39996 c 0 -3.16695 2.39324 -5.64997 5.4457 -5.64997 2.3119 0 7.09568 4.30347 27.92923 25.125 13.82672 13.81875 25.58019 25.125 26.11881 25.125 0.53862 0 23.04598 -22.05 50.01636 -49 C 152.61351 5.92917 158.91337 0 161.57358 0 163.23811 0 165.14 0.54 165.8 1.2 c 3.65793 3.65792 2.71485 4.73962 -50.96321 58.45379 -28.68977 28.70906 -52.89405 52.38942 -53.7873 52.62301 -0.89324 0.23359 -2.5073 0.0816 -3.58678 -0.33784 z' /%3E%3C/svg%3E");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#lista_obecnosci ol li {
+  height: 35.6px;
+  position: relative;
+}
+#lista_obecnosci ol li::marker {
+  color: var(--color-secondary);
+}
+#lista_obecnosci ol li div {
+  margin: 0;
+  padding: 0;
+  height: 35.6px;
+}
+#lista_obecnosci ol li div input {
+  position: absolute;
+  top: 0;
+  left: 34px;
+}
+#lista_obecnosci ol li div input:hover {
+  box-shadow: inset 0 0 3px 2px var(--color-accent-light),
+    0 0 2px 2px var(--color-grey_1);
+}
+
+#lista_obecnosci ol li div input:focus {
+  box-shadow: inset 0 0 3px 2px var(--color-accent-light),
+    0 0 3px 2px var(--color-accent);
+}
+#lista_obecnosci ol li div label {
+  position: absolute;
+  left: 70px;
+  top: -1px;
+}
+.regular-checkbox[type="checkbox" i] {
+  box-shadow: inset 0 0 2px 1px var(--color-accent);
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+}
+.regular-checkbox:checked {
+  box-shadow: none;
+}
+
+input[type="checkbox" i] {
+  background-color: transparent;
+  cursor: default;
+  appearance: none;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  outline: none;
+}
+body {
+  font-family: Source Sans Pro;
+  margin: 0;
+}
+
+body.slaby-kontrast {
+  color: grey;
+}
+main {
+  margin: 20px auto;
+  width: 80vw;
+  max-width: 900px;
+}
+.obecn {
+  background: repeating-linear-gradient(
+    0,
+    transparent 0,
+    transparent 15px,
+    #bfc1ea2e 16px,
+    transparent 17px,
+    transparent 32px,
+    #bfc1ea2e 33px,
+    #bfc1ea2e 34px,
+    transparent 35px,
+    #bfc1ea05 45px,
+    transparent 50px,
+    #bfc1ea2e 51px,
+    #bfc1ea2e 52px,
+    transparent 53px,
+    transparent 68px,
+    #bfc1ea2e 69px,
+    #bfc1ea2e 70px,
+    transparent 71px
+  );
+  padding: 0 20px 20px;
+  position: relative;
+  color: var(--color-secondary);
+}
+.obecn:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 15px,
+    #bfc1ea2e 16px,
+    transparent 17px,
+    transparent 32px,
+    #bfc1ea2e 33px,
+    #bfc1ea2e 34px,
+    transparent 35px,
+    #bfc1ea05 45px,
+    transparent 50px,
+    #bfc1ea2e 51px,
+    #bfc1ea2e 52px,
+    transparent 53px
+  );
+  z-index: -1;
+}
+.navigation {
+  height: 61px;
+  position: sticky;
+  right: 0;
+  top: 0;
+  margin: 0;
+  justify-content: end;
+  background: var(--color-accent);
+  padding-right: 20px;
+  z-index: 1;
+  display: flex;
+  list-style: none;
+  padding: 0 20px 0 0;
+  gap: 20px;
+  align-items: center;
+}
+.navigation * {
+  letter-spacing: 1px;
+}
+
+.navigation .nieaktualna {
+  transition: all 200ms;
+  color: white;
+}
+.navigation .nieaktualna:hover {
+  color: black;
+}
+.navigation .aktualna {
+  color: white;
+  font-weight: 600;
+  pointer-events: none;
+  text-decoration: none;
+}
+form.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#lista_obecnosci ol {
+  line-height: 35.5px;
+  margin-bottom: -19px;
+  padding: 10px;
+  list-style-position: inside;
+}
+
+.h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+h1,
+h2,
+.h1,
+.h2 {
+  padding: 10px;
+  line-height: 1.75;
+}
+
+h2,
+.h2 {
+  border: var(--color-grey_3) solid;
+  border-width: 0 0 1px 0;
+  padding: 0;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h1,
+.h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin: 0;
+  background-color: var(--color-accent-light);
+  text-align: center;
+  line-height: 160px;
+  font-size: 40px;
+}
+
+div {
+  margin: 20px 0;
+  padding: 20px 5px;
+}
+
+fieldset {
+  margin: 30px 0;
+  padding: 30px;
+}
+
+.os {
+  position: relative;
+  width: 400px;
+  margin: 90px auto 0;
+}
+.os p {
+  position: absolute;
+  width: 400px;
+  text-align: right;
+  right: 40px;
+  bottom: 20px;
+}
+textarea {
+  width: 100%;
+}
+
+button {
+  margin: 20px auto;
+  display: block;
+}
+
+fieldset {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-secondary);
+}
+legend {
+  color: white;
+  padding: 5px 10px;
+  background-color: var(--color-secondary);
+}
+
+.accent {
+  background: var(--color-accent);
+}
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
+input:disabled + label {
+  color: darkgrey;
+}
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+}
+
+#myBtn,
+#btn {
+  width: 60px;
+  background: transparent;
+  border: 0;
+  color: var(--color-grey_1);
+}
+#myBtn:hover,
+#btn:hover,
+#myBtn:active,
+#myBtn:focus,
+#btn:active,
+#btn:focus {
+  transition: all 200ms;
+  cursor: pointer;
+  color: var(--color-accent);
+}
+.toggle--danger,
+.toggle {
+  margin: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0;
+  font-family: inherit;
+  box-shadow: inset 0 0 0 0.0625rem var(--color-grey_3);
+  align-items: center;
+  background-color: #dfdfdf;
+  border-radius: 0.75rem;
+  display: inline-flex;
+  flex: 0 0 var(--toggle-width);
+  height: 1.5rem;
+  margin: 0;
+  position: relative;
+  transition: background-color ease-in 0.2s;
+  width: var(--toggle-width);
+}
+.toggle--danger::after,
+.toggle::after {
+  box-shadow: inset 0 0 0 0.0625rem var(--color-grey_3);
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 1.5rem;
+  position: absolute;
+  transition: left 0.2s;
+  width: 1.5rem;
+}
+.toggle--danger::before,
+.toggle::before {
+  color: #fff;
+  content: attr(data-label);
+  font-size: 0.75rem;
+  margin: 0 0 0 0.5rem;
+  transition: opacity 0.2s;
+}
+.toggle--danger:hover,
+.toggle:hover {
+  box-shadow: inset 0 0 0 0.125rem #e17100;
+}
+.toggle--danger:focus,
+.toggle:focus {
+  box-shadow: inset 0 0 0 1px var(--color-grey_1),
+    0 0 0 0.125rem var(--color-accent-light);
+}
+.toggle--danger:focus::after,
+.toggle:focus::after {
+  box-shadow: inset 0 0 0 0.0625rem var(--color-grey_1);
+}
+.toggle--danger:checked::after,
+.toggle:checked::after {
+  box-shadow: inset 0 0 0 0.0625rem var(--color-accent);
+  left: calc(var(--toggle-width) - 1.5rem);
+}
+.toggle--danger:not(:checked)::before,
+.toggle:not(:checked)::before {
+  opacity: 0;
+}
+.toggle--danger:not(:checked)::after,
+.toggle:not(:checked)::after {
+  left: 0;
+}
+.toggle--danger:not(:checked):hover::after,
+.toggle:not(:checked):hover::after,
+.toggle--danger:not(:checked):focus::after,
+.toggle:not(:checked):focus::after {
+  box-shadow: inset 0 0 0 0.0625rem var(--color-grey_3);
+}
+.toggle--danger:disabled,
+.toggle:disabled {
+  box-shadow: inset 0 0 0 0.0625rem #dfdfdf;
+  background-color: #f8f8f8;
+  cursor: inherit;
+}
+.toggle--danger:checked,
+.toggle:checked {
+  background-color: var(--color-accent);
+  box-shadow: none;
+  justify-content: initial;
+}
+.toggle--danger:checked:hover,
+.toggle:checked:hover {
+  box-shadow: inset 0 0 0 0.125rem #e17100;
+}
+.toggle--danger:checked:focus,
+.toggle:checked:focus {
+  box-shadow: inset 0 0 0 0.125rem var(--color-accent),
+    0 0 0 0.125rem var(--color-accent-light);
+}
+.toggle--danger:checked::before,
+.toggle:checked::before {
+  opacity: 1;
+}
+.toggle--danger:not(:checked):disabled::before,
+.toggle:not(:checked):disabled::before,
+.toggle--danger:not(:checked):disabled::after,
+.toggle:not(:checked):disabled::after {
+  content: none;
+}
+.toggle--danger:disabled:checked,
+.toggle:disabled:checked {
+  box-shadow: inset 0 0 0 0.0625rem #dfdfdf;
+  background-color: #f8f8f8;
+}
+.toggle--danger:disabled:checked::before,
+.toggle:disabled:checked::before {
+  color: #b7b7b7;
+}
+.toggle--danger:disabled:checked::after,
+.toggle:disabled:checked::after {
+  box-shadow: inset 0 0 0 0.0625rem #dfdfdf;
+}
+.toggle--danger:checked {
+  background-color: #dc143c;
+}
+.toggle--danger:checked::after {
+  box-shadow: inset 0 0 0 0.0625rem #dc143c;
+}
