@@ -2,24 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"
-    />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="navigation">
-      <span onClick="goto('index.html')" class="nieaktualna"
-        >Strona dobrze dostępna</span
-      >
-      <span class="aktualna" onClick="goto('non-screen-reader.html')"
-        >Strona słabo dostosowana do screen readera</span
-      >
-      <span class="nieaktualna" onClick="goto('slaby-kontrast.html')"
-        >Strona ze słabym kontrastem</span
-      >
+      <span onClick="goto('index.html')" class="nieaktualna">Strona dobrze dostępna</span>
+      <span class="aktualna" onClick="goto('non-screen-reader.html')">Strona słabo dostosowana do screen readera</span>
+      <span class="nieaktualna" onClick="goto('slaby-kontrast.html')">Strona ze słabym kontrastem</span>
     </div>
 
     <p class="h1">Train the Trainer - ostatni zjazd</p>
@@ -27,11 +18,9 @@
       <div>
         <p class="h2">Wstęp</p>
 
-        Spotkaliśmy się osobiście we Wrocławiu. Tematem tej części kursu jest
-        prezentacja dowolnego szkolenia przez każdego z uczestników.
-        <font size="0" style="margin-top: -10px; display: block"
-          ><br />&nbsp;</font
-        >
+        Spotkaliśmy się osobiście we Wrocławiu. Tematem tej części kursu jest prezentacja dowolnego szkolenia przez
+        każdego z uczestników.
+        <font size="0" style="margin-top: -10px; display: block"><br />&nbsp;</font>
       </div>
 
       <section class="obecn">
@@ -42,12 +31,7 @@
           <legend class="accent">
             <label> Czy masz uprawnienia, by sprawdzić listę obecności?</label>
           </legend>
-          <input
-            type="checkbox"
-            class="toggle"
-            id="uprawnienia"
-            data-label="TAK"
-          />
+          <input type="checkbox" class="toggle" id="uprawnienia" data-label="TAK" />
         </fieldset>
         <form id="lista_obecnosci" class="disabled">
           <fieldset>
@@ -56,49 +40,49 @@
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Jakub Batogowski</label>
+                  <label>Kasia Kowalska</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Marta Cząstkiewicz</label>
+                  <label>Jim Carry</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Szymon Florianowicz</label>
+                  <label>Kopciuszek</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Adrianna Lipok</label>
+                  <label>Królewna Śnieżka</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Kamil Nowak</label>
+                  <label>Shrek</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Dariusz Piechnik</label>
+                  <label>U2</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Andrzej Polit</label>
+                  <label>Brat Pitt</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Krzysztof Agieńczuk</label>
+                  <label>Sandra Bullock</label>
                 </div>
               </li>
               <li>
@@ -110,31 +94,31 @@
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Szymon Sendal</label>
+                  <label>Roszpunka</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Anna Siecińska</label>
+                  <label>Vaiana</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Anna Skowronek-Jaskuła</label>
+                  <label>Gertruda</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Joanna Szałkiewicz</label>
+                  <label>Barac Obama</label>
                 </div>
               </li>
               <li>
                 <div>
                   <input type="checkbox" class="regular-checkbox" disabled />
-                  <label>Sandra Żóraw</label>
+                  <label>Kevin Samwdomu</label>
                 </div>
               </li>
             </ol>
@@ -148,20 +132,17 @@
           </fieldset>
 
           <fieldset>
-            <legend>Obecność prowadzącego Andrzeja Kaźmierczaka</legend>
+            <legend>Obecność prowadzącego Prowadzacego Kaźmierczaka</legend>
             <label> Obecny </label>
-            <input type="radio" name="obecnosc_andrzej" disabled />
+            <input type="radio" name="obecnosc_prowadzacy" disabled />
             <br />
             <label> Nieobecny </label>
-            <input type="radio" name="obecnosc_andrzej" disabled />
+            <input type="radio" name="obecnosc_prowadzacy" disabled />
           </fieldset>
           <hr />
         </form>
         <button id="btn" type="reset">
-          <svg
-            viewBox="0 0 167.05818 112.38647"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg viewBox="0 0 167.05818 112.38647" xmlns="http://www.w3.org/2000/svg">
             <path
               fill="currentColor"
               d="M 57.46271,111.93896 C 53.98006,110.58591 0,55.59477 0,53.39996 c 0,-3.16695 2.39324,-5.64997 5.4457,-5.64997 2.3119,0 7.09568,4.30347 27.92923,25.125 13.82672,13.81875 25.58019,25.125 26.11881,25.125 0.53862,0 23.04598,-22.05 50.01636,-49 C 152.61351,5.92917 158.91337,0 161.57358,0 163.23811,0 165.14,0.54 165.8,1.2 c 3.65793,3.65792 2.71485,4.73962 -50.96321,58.45379 -28.68977,28.70906 -52.89405,52.38942 -53.7873,52.62301 -0.89324,0.23359 -2.5073,0.0816 -3.58678,-0.33784 z"
@@ -173,12 +154,12 @@
       <!-- <div class="text-center">
         <p class="h2">Szkolenie o accessibility prowadzą:</p>
         <div class="os">
-          <img id="siecinska_photo" src="./images/ania.jpg" />
+          <img id="Vaiana_photo" src="./images/ania.jpg" />
           <p>Ania Siecińska</p>
         </div>
         <div class="os">
-          <img id="czastkiewicz_photo" src="./images/marta.jpg" />
-          <p>Marta Cząstkiewicz</p>
+          <img id="Carry_photo" src="./images/marta.jpg" />
+          <p>Jim Carry</p>
         </div>
         <div class="os">
           <img id="skowronek_photo" src="./images/skowronek.jpg" />
@@ -189,72 +170,56 @@
       <div>
         <p class="h2">Poprowadzimy szkolenie</p>
 
-        Zakończeniem i zwieńczeniem kursu jest poprowadzone przez każdego z
-        uczestników półgodzinne szkolenie. Temat szkolenia jest dowolny, zapewne
-        chodzi w nim głównie o to, by wystawić się na ocenę współkursantów i
-        poczuć, w jakiej formie prezentacji czujemy się najlepiej.
+        Zakończeniem i zwieńczeniem kursu jest poprowadzone przez każdego z uczestników półgodzinne szkolenie. Temat
+        szkolenia jest dowolny, zapewne chodzi w nim głównie o to, by wystawić się na ocenę współkursantów i poczuć, w
+        jakiej formie prezentacji czujemy się najlepiej.
       </div>
       <div>
         <p class="h2">Chętnie schowam się online</p>
 
-        Myślę teraz, że dla mnie optymalną formą jest jednak spotkanie online. Z
-        jednej strony fajnie jest spotkać się osobiście, ale z drugiej nie
-        bardzo wiem, jak mam zaprezentować się przed grupą osób, pisząc coś w
-        komputerze. Jak tu nawiązać kontakt wzorkowy? W jaki sposób zadawać
-        pytania? Nie mam teraz odpowiedzi.
+        Myślę teraz, że dla mnie optymalną formą jest jednak spotkanie online. Z jednej strony fajnie jest spotkać się
+        osobiście, ale z drugiej nie bardzo wiem, jak mam zaprezentować się przed grupą osób, pisząc coś w komputerze.
+        Jak tu nawiązać kontakt wzorkowy? W jaki sposób zadawać pytania? Nie mam teraz odpowiedzi.
       </div>
 
       <p class="h2">I jeszcze taki bajer</p>
       <br />
       <p class="h3">Art. 2. Ustawę stosuje się do:</p>
 
-      &nbsp; &nbsp; &nbsp; &nbsp;1. jednostek sektora finansów publicznych (Dz.
-      U. z 2017 r. poz. 2077, z późn. zm.3),
+      &nbsp; &nbsp; &nbsp; &nbsp;1. jednostek sektora finansów publicznych (Dz. U. z 2017 r. poz. 2077, z późn. zm.3),
       <br />
-      &nbsp; &nbsp; &nbsp; &nbsp; 2. innych, niż określone w pkt 1, państwowych
-      jednostek organizacyjnych,
+      &nbsp; &nbsp; &nbsp; &nbsp; 2. innych, niż określone w pkt 1, państwowych jednostek organizacyjnych,
       <br />
-      &nbsp; &nbsp; &nbsp; &nbsp; 3. innych, niż określone w pkt. 1,
-      samorządowych jednostek organizacyjnych,
+      &nbsp; &nbsp; &nbsp; &nbsp; 3. innych, niż określone w pkt. 1, samorządowych jednostek organizacyjnych,
       <br />
-      &nbsp; &nbsp; &nbsp; &nbsp; 4. innych, niż określone w pkt. 1. osób
-      prawnych, bezpośrednio albo pośrednio przez inny podmiot:
+      &nbsp; &nbsp; &nbsp; &nbsp; 4. innych, niż określone w pkt. 1. osób prawnych, bezpośrednio albo pośrednio przez
+      inny podmiot:
       <br />
-      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-      &nbsp; &nbsp;1. finansują je w ponad 50% lub<br />
-      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-      &nbsp; &nbsp;2. posiadają ponad połowę udziałów albo akcji, lub<br />
-      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-      &nbsp; &nbsp;3. sprawują nadzór nad organem zarządzającym, lub<br />
-      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-      &nbsp; &nbsp;4. mają prawo do powoływania ponad połowy składu organu
-      nadzorczego lub zarządzającego,<br />
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;1. finansują je w ponad
+      50% lub<br />
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;2. posiadają ponad połowę
+      udziałów albo akcji, lub<br />
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3. sprawują nadzór nad
+      organem zarządzającym, lub<br />
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;4. mają prawo do
+      powoływania ponad połowy składu organu nadzorczego lub zarządzającego,<br />
 
-      &nbsp; &nbsp; &nbsp; &nbsp;5. związków podmiotów, o których mowa w pkt
-      1–3,<br />
-      &nbsp; &nbsp; &nbsp; &nbsp;6. organizacji pozarządowych, o których mowa w
-      art. 3 ust. 2 ustawy z dnia 24 kwietnia 2003 r. o działalności pożytku
-      publicznego i o
+      &nbsp; &nbsp; &nbsp; &nbsp;5. związków podmiotów, o których mowa w pkt 1–3,<br />
+      &nbsp; &nbsp; &nbsp; &nbsp;6. organizacji pozarządowych, o których mowa w art. 3 ust. 2 ustawy z dnia 24 kwietnia
+      2003 r. o działalności pożytku publicznego i o
       <br />
-      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;wolontariacie (Dz. U. z
-      2019 r. poz. 688), prowadzących działalność w sferze zadań publicznych
-      wymienionych w art. 4 ust. 1 pkt
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;wolontariacie (Dz. U. z 2019 r. poz. 688), prowadzących działalność
+      w sferze zadań publicznych wymienionych w art. 4 ust. 1 pkt
       <br />
-      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;6, 7 lub 10 tej ustawy –
-      posiadających strony internetowe lub aplikacje mobilne, lub zarządzających
-      elementami stron<br />
-      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;internetowych, lub
-      aplikacji mobilnych zamieszczonymi w środowisku umożliwiającym zapewnienie
-      dostępności cyfrowej treści,<br />
-      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;zwanych dalej „podmiotami
-      publicznymi”
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;6, 7 lub 10 tej ustawy – posiadających strony internetowe lub
+      aplikacje mobilne, lub zarządzających elementami stron<br />
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;internetowych, lub aplikacji mobilnych zamieszczonymi w środowisku
+      umożliwiającym zapewnienie dostępności cyfrowej treści,<br />
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;zwanych dalej „podmiotami publicznymi”
       <br /><br /><br /><br />
 
       <button id="myBtn">
-        <svg
-          viewBox="0 0 37.835419 44.405893"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg viewBox="0 0 37.835419 44.405893" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="currentColor"
             d="m 19.18229,44.33 -0.26458,0.0661 -0.33073,-0.13229 -0.33073,-0.1323 V 28.28837 12.435419 h -0.1966 -0.1966 L 10.94191,19.35287 4.02076,26.27032 3.59788,26.10805 3.175,25.94578 v -0.47732 -0.47732 l 7.74942,-7.73307 7.74941,-7.733068 h 0.25592 0.25591 l 7.73738,7.740718 7.73738,7.74072 v 0.46967 0.46967 l -0.42288,0.16227 -0.42288,0.16227 -6.92114,-6.91745 -6.92115,-6.917451 H 19.77783 19.5833 L 19.5151,28.35454 19.4469,44.27367 Z M 18.82993,1.566614 0.66146,1.545724 0.33073,1.412272 0,1.278819 V 0.800009 0.321198 L 0.41852,0.160599 0.83703,0 h 18.08068 18.08068 l 0.41851,0.160599 0.41852,0.160599 V 0.79375 1.266302 L 37.4169,1.426901 36.99839,1.5875 Z"
