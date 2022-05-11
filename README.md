@@ -1,4 +1,12 @@
-### Hi there 👋
+## Compare the same page with different accessibility features
+
+### Suggested Chrome extensions:
+* Wave Evaluation Tool ([link](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh))
+* ChromeVox ([link](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn))
+* Accessible Color Picker ([link](https://chrome.google.com/webstore/detail/accessible-color-picker/bgfhbflmeekopanooidljpnmnljdihld))
+
+
+
 
 <!--
 **a-skowronek-jaskula/a-skowronek-jaskula** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
